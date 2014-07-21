@@ -14,11 +14,6 @@
     "type": "git",
     "url": "git://github.com/sparkfun/phant-keychain-hex"
   },
-  "licenses": [
-    {
-      "type": "GPL v3"
-    }
-  ],
   "dependencies": {
     "hashids": "^0.3.3"
   },
@@ -32,5 +27,42 @@
   },
   "scripts": {
     "test": "grunt"
+  },
+  "license": "GPL-3.0",
+  "engines": {
+    "node": "^0.10.29"
+  },
+  "phantConfig": {
+    "name": "Hex Based Keychain",
+    "options": [
+      {
+        "label": "Key Length",
+        "name": "keyLength",
+        "default": "6",
+        "type": "number",
+        "description": "The minimum length for generated keys."
+      },
+      {
+        "label": "Public Salt",
+        "name": "publicSalt",
+        "default": "Change this public salt",
+        "type": "text",
+        "description": "The salt used when generating the public key hash. Add your own random string."
+      },
+      {
+        "label": "Private Salt",
+        "name": "privateSalt",
+        "default": "Change this private salt",
+        "type": "text",
+        "description": "The salt used when generating the private key hash. Add your own random string."
+      },
+      {
+        "label": "Delete Salt",
+        "name": "deleteSalt",
+        "default": "Change this delete salt",
+        "type": "text",
+        "description": "The salt used when generating the delete key hash. Add your own random string."
+      }
+    ]
   }
 }
