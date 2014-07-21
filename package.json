@@ -1,6 +1,6 @@
 {
   "name": "phant-keychain-hex",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "main": "lib/phant-keychain-hex.js",
   "description": "hex key encryption for phant",
   "homepage": "https://github.com/sparkfun/phant-keychain-hex",
